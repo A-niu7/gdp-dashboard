@@ -13,14 +13,13 @@ branch_data = {
 }
 
 # 侧边栏筛选模块
-with st.sidebar:
-    st.subheader("网点筛选")
-    selected_branch = st.selectbox(
-        "选择网点",
-        options=branch_data["网点名称"],
-        index=0,
-        help="请从下拉菜单中选择要查看的网点"
-    )
+
+selected_branch = st.selectbox(
+    "选择网点",
+    options=branch_data["网点名称"],
+    index=0,
+    help="请从下拉菜单中选择要查看的网点"
+)
 
 # 主显示区
 st.header(f"{selected_branch}存款付息表看板")
