@@ -25,6 +25,8 @@ with st.sidebar:
 # 主显示区
 st.header(f"{selected_branch}存款付息表看板")
 
+print(selected_branch)
+
 # 构建数据表格
 table_data = {
     "序号": [1, 2, 3],
