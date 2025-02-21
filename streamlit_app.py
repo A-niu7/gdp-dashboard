@@ -39,26 +39,26 @@ table_data = {
     ]
 }
 
-df = pd.DataFrame(table_data)
+# df = pd.DataFrame(table_data)
 
-# 表格显示配置
-st.dataframe(
-    df,
-    column_config={
-        "序号": st.column_config.NumberColumn(width="small"),
-        "指标项目": st.column_config.TextColumn(width="medium"),
-        "栏位": st.column_config.TextColumn(width="medium"),
-        "指标": st.column_config.ProgressColumn(
-            "完成率",
-            format="%f%%",
-            min_value=0,
-            max_value=3,
-            width="large"
-        )
-    },
-    hide_index=True,
-    use_container_width=True
-)
+# # 表格显示配置
+# st.dataframe(
+#     df,
+#     column_config={
+#         "序号": st.column_config.NumberColumn(width="small"),
+#         "指标项目": st.column_config.TextColumn(width="medium"),
+#         "栏位": st.column_config.TextColumn(width="medium"),
+#         "指标": st.column_config.ProgressColumn(
+#             "完成率",
+#             format="%f%%",
+#             min_value=0,
+#             max_value=3,
+#             width="large"
+#         )
+#     },
+#     hide_index=True,
+#     use_container_width=True
+# )
 
-# 数据说明
-st.caption("数据说明：付息率指标为年化利率，更新周期为T+1")
+# # 数据说明
+# st.caption("数据说明：付息率指标为年化利率，更新周期为T+1")
