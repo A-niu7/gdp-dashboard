@@ -25,19 +25,19 @@ with st.sidebar:
 # 主显示区
 st.header(f"{selected_branch}存款付息表看板")
 
-selected_branch = "朝阳支行"
 
-# 构建数据表格
-table_data = {
-    "序号": [1, 2, 3],
-    "指标项目": ["一般性存款付息率", "对公存款付息率", "个人存款付息率"],
-    "栏位": ["金额类", "金额类", "金额类"],
-    "指标": [
-        f"{branch_data[branch_data['网点名称'] == selected_branch]['一般性存款付息率'].values[0]}%",
-        f"{branch_data[branch_data['网点名称'] == selected_branch]['对公存款付息率'].values[0]}%",
-        f"{branch_data[branch_data['网点名称'] == selected_branch]['个人存款付息率'].values[0]}%"
-    ]
-}
+
+# # 构建数据表格
+# table_data = {
+#     "序号": [1, 2, 3],
+#     "指标项目": ["一般性存款付息率", "对公存款付息率", "个人存款付息率"],
+#     "栏位": ["金额类", "金额类", "金额类"],
+#     "指标": [
+#         f"{branch_data[branch_data['网点名称'] == selected_branch]['一般性存款付息率'].values[0]}%",
+#         f"{branch_data[branch_data['网点名称'] == selected_branch]['对公存款付息率'].values[0]}%",
+#         f"{branch_data[branch_data['网点名称'] == selected_branch]['个人存款付息率'].values[0]}%"
+#     ]
+# }
 
 # df = pd.DataFrame(table_data)
 
