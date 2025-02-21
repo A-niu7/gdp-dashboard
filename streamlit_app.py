@@ -5,7 +5,7 @@ from datetime import datetime
 st.set_page_config(page_title="财务报表分析平台", layout="wide")
 
 # 初始化session状态
-if 'report_type' not in st.st.session_state:
+if 'report_type' not in st.session_state:
     st.session_state.report_type = "月表"
 
 # 模拟数据
